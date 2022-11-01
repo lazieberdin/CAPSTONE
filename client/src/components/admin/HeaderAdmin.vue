@@ -20,12 +20,12 @@
   </nav> -->
   <div class="row col-md-12 d-none d-lg-block text-center">
     <RouterLink class="navbar-brand" to="/">
-      <img src="src/assets/nelpj.jpg" />
+      <img src="src/assets/nelpj1920x150.png" />
     </RouterLink>
   </div>
   <div class="row col-md-12 d-block d-sm-block d-md-none text-center">
     <RouterLink class="navbar-brand" to="/">
-      <img src="src/assets/nelpj-small.jpg" />
+      <img src="src/assets/logo.png" />
     </RouterLink>
   </div>
   <nav class="navbar navbar-expand-lg bg-light">
@@ -73,7 +73,7 @@
               >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/public">Members</RouterLink>
+              <RouterLink class="nav-link" to="/members">Members</RouterLink>
             </li>
             <li class="nav-item">
               <RouterLink class="nav-link" to="/public">Log-out</RouterLink>

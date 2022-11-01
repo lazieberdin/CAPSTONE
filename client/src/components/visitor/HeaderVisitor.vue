@@ -1,31 +1,12 @@
 <template>
-  <!-- <title>NELPJ</title>
-    <img alt="Vue logo" class="logo" src="@/assets/icon192x192.png" />
-    <nav class="navbar bg-light">
-      <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1"
-          ><RouterLink to="/">SampleRoute</RouterLink></span
-        >
-      </div>
-      <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1"
-          ><RouterLink to="/">Navbar</RouterLink></span
-        >
-      </div>
-      <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1"
-          ><RouterLink to="/">OPtions</RouterLink></span
-        >
-      </div>
-    </nav> -->
   <div class="row col-md-12 d-none d-lg-block text-center">
     <RouterLink class="navbar-brand" to="/">
-      <img src="src/assets/nelpj.jpg" />
+      <img src="src/assets/nelpj1920x150.png" />
     </RouterLink>
   </div>
   <div class="row col-md-12 d-block d-sm-block d-md-none text-center">
     <RouterLink class="navbar-brand" to="/">
-      <img src="src/assets/nelpj-small.jpg" />
+      <img src="src/assets/logo.png" />
     </RouterLink>
   </div>
   <nav class="navbar navbar-expand-lg bg-light">
@@ -45,29 +26,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/">Home</RouterLink>
+              <RouterLink class="nav-link" to="/Landingpage">Home</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/">Events</RouterLink>
+              <RouterLink class="nav-link" to="/visitor/Testimonials">Testimonials</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/">Activities</RouterLink>
+              <RouterLink class="nav-link" to="/visitor/Prayers">Prayers</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/">Foundations Info</RouterLink>
+              <RouterLink class="nav-link" to="/visitor/BePartOfUs">Be part of us</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/">Materials</RouterLink>
+              <RouterLink class="nav-link" to="/Materials">Materials</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/">Sponsorships</RouterLink>
+              <RouterLink class="nav-link" to="/AboutUs">About Us</RouterLink>
             </li>
-            <li class="nav-item">
-              <RouterLink class="nav-link" to="/">Members</RouterLink>
-            </li>
-            <li class="nav-item">
-              <RouterLink class="nav-link" to="/">Log-out</RouterLink>
-            </li>
+            <!-- <li class="nav-item">
+              <RouterLink class="nav-link" to="/">Log-in</RouterLink>
+            </li> -->
           </ul>
         </div>
       </div>

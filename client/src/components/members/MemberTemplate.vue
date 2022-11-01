@@ -1,10 +1,11 @@
+|
 <template>
-  <HeaderAdmin />
-  <RouterView />
+  <HeaderMember />
   <NELPJFooter/>
+  <RouterView />
 </template>
 <script setup>
-import HeaderAdmin from './HeaderVisitor.vue' 
+import HeaderMember from './HeaderMember.vue'
 import NELPJFooter from 'NELPJFooter.vue'
 </script>
-<style></style>
+<style>
