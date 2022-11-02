@@ -53,22 +53,27 @@ const router = createRouter({
     //   path: '/',
     //   name: 'Landing page',
     //   component: () => import('../components/Landingpage.vue'),
-    // }, 
+    // },
 
     //Members routes
     {
       path: '/member',
       name: 'member',
       component: () => import('../components/members/MemberTemplate.vue'),
-      
+
       children: [
         {
-          path: '/MemberProfile',
+          path: 'MemberProfile',
           name: 'Members Profile',
           component: () => import('../components/members/MemberProfile.vue'),
         },
+        // {
+        //   path: '/MemberProfile',
+        //   name: 'Members Profile',
+        //   component: () => import('../components/members/MemberProfile.vue'),
+        // },
         {
-          path: '/MemberEvents',
+          path: 'MemberEvents',
           name: 'Members events',
           component: () => import('../components/members/MemberEvents.vue'),
         },
@@ -90,7 +95,8 @@ const router = createRouter({
         {
           path: '/MemberSponsorships',
           name: 'Members sponsorships',
-          component: () => import('../components/members/MemberSponsorships.vue'),
+          component: () =>
+            import('../components/members/MemberSponsorships.vue'),
         },
         {
           path: '/MemberMessages',
@@ -98,17 +104,17 @@ const router = createRouter({
           component: () => import('../components/members/MemberMessages.vue'),
         },
       ],
-    }, //End of member routes 
+    }, //End of member routes
 
     //Visitors routes
     {
       path: '/',
       name: 'Landing page',
       component: () => import('../components/Landingpage.vue'),
-      
+
       children: [
         {
-          path: '/Testimonials',
+          path: 'Testimonials',
           name: 'Testimonials',
           component: () => import('../components/visitor/Testimonials.vue'),
         },
@@ -139,6 +145,11 @@ const router = createRouter({
         // },
       ],
     }, //End of Visitor routes
+    //Error 404
+    {
+      path: '/:catchAll(.*)*',
+      component: () => import('../components/ErrorNotFound.vue'),
+    },
   ],
   // linkActiveClass: 'my-active-link',
   // linkExactActiveClass: 'my-exact-active-link',

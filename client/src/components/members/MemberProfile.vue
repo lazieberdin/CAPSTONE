@@ -1,5 +1,6 @@
 <template>
-    <!-- Members Profile -->
+  <!-- Members Profile -->
+  <div></div>
 </template>
 <script></script>
 <style></style>

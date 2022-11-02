@@ -1,14 +1,5 @@
 <template>
-  <div class="row col-md-12 d-none d-lg-block text-center">
-    <RouterLink class="navbar-brand" to="/">
-      <img src="src/assets/nelpj1920x150.png" />
-    </RouterLink>
-  </div>
-  <div class="row col-md-12 d-block d-sm-block d-md-none text-center">
-    <RouterLink class="navbar-brand" to="/">
-      <img src="src/assets/logo.png" />
-    </RouterLink>
-  </div>
+  <BannerComponent />
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
       <button
@@ -26,19 +17,27 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/Landingpage">Home</RouterLink>
+              <RouterLink class="nav-link" to="/">Home</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/visitor/Testimonials">Testimonials</RouterLink>
+              <RouterLink class="nav-link" to="/member/profile"
+                >Testimonials</RouterLink
+              >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/visitor/Prayers">Prayers</RouterLink>
+              <RouterLink class="nav-link" to="/visitor/Prayers"
+                >Prayers</RouterLink
+              >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/visitor/BePartOfUs">Be part of us</RouterLink>
+              <RouterLink class="nav-link" to="/visitor/BePartOfUs"
+                >Be part of us</RouterLink
+              >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/Materials">Materials</RouterLink>
+              <RouterLink class="nav-link" to="/Materials"
+                >Materials</RouterLink
+              >
             </li>
             <li class="nav-item">
               <RouterLink class="nav-link" to="/AboutUs">About Us</RouterLink>
@@ -52,7 +51,9 @@
     </div>
   </nav>
 </template>
-<script></script>
+<script setup>
+import BannerComponent from '../BannerComponent.vue'
+</script>
 <style scoped>
 nav li.a.router-link-active,
 nav li .router-link-exact-active {

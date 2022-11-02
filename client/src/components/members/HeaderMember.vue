@@ -1,14 +1,13 @@
 <template>
-<div class="row col-md-12 d-none d-lg-block text-center">
-    <RouterLink class="navbar-brand" to="/">
-      <img src="src/assets/nelpjBanner.png" />
-    </RouterLink>
-  </div>
-  <div class="row col-md-12 d-block d-sm-block d-md-none text-center">
-    <RouterLink class="navbar-brand" to="/">
-      <img src="src/assets/nelpj-small.jpg" />
-    </RouterLink>
-  </div>
+  <!-- <div
+    class="row col-md-12 d-none d-lg-block text-center"
+    style="
+      background: url('src/assets/nelpj1920x150.png') no-repeat;
+      background-size: 100%;
+      height: 100px;
+    "
+  > -->
+  <BannerComponent />
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
       <button
@@ -26,7 +25,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/admin">Member's Profile</RouterLink>
+              <RouterLink class="nav-link" to="/admin"
+                >Member's Profile</RouterLink
+              >
             </li>
             <li class="nav-item">
               <RouterLink class="nav-link" to="/admin/events"
@@ -65,7 +66,9 @@
     </div>
   </nav>
 </template>
-<script></script>
+<script setup>
+import BannerComponent from '../BannerComponent.vue'
+</script>
 <style scoped>
 nav li.a.router-link-active,
 nav li .router-link-exact-active {
