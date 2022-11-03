@@ -70,4 +70,8 @@
   </footer>
 </template>
 <script></script>
-<style></style>
+<style  scoped> 
+  img{
+    margin: 10px;
+  }
+</style>
