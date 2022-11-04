@@ -1,12 +1,4 @@
 <template>
-  <!-- <div
-    class="row col-md-12 d-none d-lg-block text-center"
-    style="
-      background: url('src/assets/nelpj1920x150.png') no-repeat;
-      background-size: 100%;
-      height: 100px;
-    "
-  > -->
   <BannerComponent />
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
@@ -25,40 +17,36 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/admin"
+              <RouterLink class="nav-link" to="/member"
                 >Member's Profile</RouterLink
               >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/admin/events"
-                >Events</RouterLink
-              >
+              <RouterLink class="nav-link" to="/events">Events</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/admin/activities"
+              <RouterLink class="nav-link" to="/activities"
                 >Activities</RouterLink
               >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/admin/fndsInfo"
-                >Foundations Info</RouterLink
-              >
+              <RouterLink class="nav-link" to="/aboutUs">About Us</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/admin/materials"
+              <RouterLink class="nav-link" to="/materials"
                 >Materials</RouterLink
               >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/admin/sponsorships"
+              <RouterLink class="nav-link" to="/sponsorships"
                 >Sponsorships</RouterLink
               >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/members">Messages</RouterLink>
+              <RouterLink class="nav-link" to="/messages">Messages</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/public">Log-out</RouterLink>
+              <RouterLink class="nav-link" to="/">Log-out</RouterLink>
             </li>
           </ul>
         </div>
