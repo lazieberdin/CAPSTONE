@@ -1,12 +1,12 @@
 <template>
   <BannerComponent />
-  <HeaderVisitor />
+  <VisitorMenus />
   <RouterView />
   <NELPJFooter />
 </template>
 <script setup>
-import HeaderVisitor from '../components/visitor/HeaderVisitor.vue'
-import BannerComponent from '../components/BannerComponent.vue'
+import VisitorMenus from '../components/visitor/VisitorMenus.vue'
+import BannerComponent from '../components/general/BannerComponent.vue'
 import NELPJFooter from '../components/NELPJFooter.vue'
 </script>
 <style></style>

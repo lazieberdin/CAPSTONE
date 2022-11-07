@@ -1,10 +1,99 @@
-/** @format */
-
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    //--------------------------------Visitor routes---------------------------------
+    {
+      path: '/',
+      name: 'Template',
+      component: () => import('../components/visitor/VisitorsTemplate.vue'),
+      //   component: () => import('../components/visitor/VisitorsTemplate.vue'),
+
+      children: [
+        {
+          path: '/',
+          name: 'Home page',
+          component: () => import('../components/visitor/Homepage.vue'),
+        },
+        {
+          path: 'testimonials',
+          name: 'Testimonials',
+          component: () => import('../components/visitor/Testimonials.vue'),
+        },
+        {
+          path: 'prayers',
+          name: 'Prayers',
+          component: () => import('../components/visitor/Prayers.vue'),
+        },
+        {
+          path: 'bePartOfUs',
+          name: 'Be part of us',
+          component: () => import('../components/visitor/BePartOfUs.vue'),
+        },
+        {
+          path: 'aboutUs',
+          name: 'About us page',
+          component: () => import('../components/AboutUs.vue'),
+        },
+        {
+          path: 'materials',
+          name: 'V Materials',
+          component: () => import('../components/visitor/Materials.vue'),
+        },
+        // {
+        //   path: '/Login',
+        //   name: 'Login',
+        //   component: () => import('../components/visitor/Login.vue'),
+        // },
+      ],
+    }, //End of Visitor routes
+
+    //--------------------------------Members routes---------------------------------
+    {
+      path: '/member',
+      name: 'member',
+      component: () => import('../components/members/MemberTemplate.vue'),
+
+      children: [
+        {
+          path: '/member',
+          name: 'Profile',
+          component: () => import('../components/members/Profile.vue'),
+        },
+        {
+          path: 'events',
+          name: 'Events',
+          component: () => import('../components/members/Events.vue'),
+        },
+        {
+          path: 'activities',
+          name: 'Activities',
+          component: () => import('../components/members/Activities.vue'),
+        },
+        {
+          path: 'aboutUs',
+          name: 'AboutUs',
+          component: () => import('../components/AboutUs.vue'),
+        },
+        {
+          path: 'materials',
+          name: 'Materials',
+          component: () => import('../components/members/Materials.vue'),
+        },
+        {
+          path: 'sponsorships',
+          name: 'Sponsorships',
+          component: () => import('../components/members/Sponsorships.vue'),
+        },
+        {
+          path: 'messages',
+          name: 'messages',
+          component: () => import('../components/members/Messages.vue'),
+        },
+      ],
+    }, //End of member routes
+
     //--------------------------------Admin routes---------------------------------
     {
       path: '/admin',
@@ -23,124 +112,32 @@ const router = createRouter({
           component: () => import('../components/admin/Events.vue'),
         },
         {
-          path: '/activities',
+          path: 'activities',
           name: 'activities',
           component: () => import('../components/admin/Activities.vue'),
         },
         {
-          path: '/fndsInfo',
+          path: 'fndsInfo',
           name: 'foundationsInfo',
           component: () => import('../components/admin/FndsInfo.vue'),
         },
         {
-          path: '/materials',
+          path: 'materials',
           name: 'materials',
-          component: () => import('../components/admin/Materials.vue'),
+          component: () => import('../components/admin/AdminMaterials.vue'),
         },
         {
-          path: '/sponsorships',
+          path: 'sponsorships',
           name: 'sponsorships',
           component: () => import('../components/admin/Sponsorships.vue'),
         },
         {
-          path: '/members',
+          path: 'members',
           name: 'members',
           component: () => import('../components/admin/Members.vue'),
         },
       ],
     }, //End of admin routes
-
-    //--------------------------------Members routes---------------------------------
-    {
-      path: '/member',
-      name: 'member',
-      component: () => import('../components/members/MemberTemplate.vue'),
-
-      children: [
-        {
-          path: '/member',
-          name: 'Profile',
-          component: () => import('../components/members/MemberProfile.vue'),
-        },
-        {
-          path: '/events',
-          name: 'Events',
-          component: () => import('../components/members/MemberEvents.vue'),
-        },
-        {
-          path: '/activities',
-          name: 'activities',
-          component: () => import('../components/members/MemberActivities.vue'),
-        },
-        {
-          path: '/aboutUs',
-          name: 'About us page',
-          component: () => import('../components/AboutUs.vue'),
-        },
-        {
-          path: '/materials',
-          name: 'Materials',
-          component: () => import('../components/Materials.vue'),
-        },
-        {
-          path: '/sponsorships',
-          name: 'Members sponsorships',
-          component: () =>
-            import('../components/members/MemberSponsorships.vue'),
-        },
-        {
-          path: '/messages',
-          name: 'Messages',
-          component: () => import('../components/members/MemberMessages.vue'),
-        },
-      ],
-    }, //End of member routes
-
-    //--------------------------------Visitor routes---------------------------------
-    {
-      path: '/',
-      name: 'Template',
-      component: () => import('../components/Template.vue'),
-      //   component: () => import('../components/visitor/VisitorsTemplate.vue'),
-
-      children: [
-        {
-          path: '/',
-          name: 'Home page',
-          component: () => import('../components/visitor/Homepage.vue'),
-        },
-        {
-          path: 'Testimonials',
-          name: 'Testimonials',
-          component: () => import('../components/visitor/Testimonials.vue'),
-        },
-        {
-          path: 'Prayers',
-          name: 'Prayers',
-          component: () => import('../components/visitor/Prayers.vue'),
-        },
-        {
-          path: 'BePartOfUs',
-          name: 'Be part of us',
-          component: () => import('../components/visitor/BePartOfUs.vue'),
-        },
-        {
-          path: 'AboutUs',
-          name: 'About us page',
-          component: () => import('../components/AboutUs.vue'),
-        },
-        {
-          path: 'Materials',
-          name: 'Materials',
-          component: () => import('../components/Materials.vue'),
-        },
-        // {
-        //   path: '/Login',
-        //   name: 'Login',
-        //   component: () => import('../components/visitor/Login.vue'),
-        // },
-      ],
-    }, //End of Visitor routes
     //Error 404
     {
       path: '/:catchAll(.*)*',

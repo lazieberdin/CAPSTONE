@@ -4,7 +4,7 @@
   <!-- <BannerComponent /> -->
 
   <!-- <RouterView /> -->
-  <h1>about us page</h1>
+  <h1>General about us page</h1>
   <!-- Vision -->
   <div></div>
   <!-- Mission -->

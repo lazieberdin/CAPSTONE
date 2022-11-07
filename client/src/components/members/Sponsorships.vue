@@ -1,5 +1,5 @@
 <template>
-  <h1>materials page</h1>
+  <h1>Member Sponsorships page</h1>
 </template>
 <script></script>
 <style></style>

@@ -1,5 +1,5 @@
 <template>
-  <h1>Messages page</h1>
+  <h1>Visitor materials page</h1>
 </template>
 <script></script>
 <style></style>

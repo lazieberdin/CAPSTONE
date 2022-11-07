@@ -6,6 +6,7 @@
   <!-- Heavens Messages -->
 
   <div>
+    <h1>Landing page</h1>
     <p class="">
       "In cases which concern private revelations, it is better to believe than
       not believe, for if you believe, and it is proven true, you will be happy

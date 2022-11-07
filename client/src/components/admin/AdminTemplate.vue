@@ -1,13 +1,13 @@
 |
 <template>
   <BannerComponent />
-  <HeaderAdmin />
+  <AdminMenus />
   <RouterView />
   <NELPJFooter />
 </template>
 <script setup>
-import BannerComponent from '../BannerComponent.vue'
-import HeaderAdmin from './HeaderAdmin.vue'
+import BannerComponent from '../generals/BannerComponent.vue'
+import AdminMenus from './AdminMenus.vue'
 import NELPJFooter from '../NELPJFooter.vue'
 </script>
 <style></style>

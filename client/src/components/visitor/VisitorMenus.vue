@@ -1,5 +1,4 @@
 <template>
-  <BannerComponent />
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
       <button
@@ -17,37 +16,30 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/member"
-                >Member's Profile</RouterLink
+              <RouterLink class="nav-link" to="/">Home</RouterLink>
+            </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="testimonials"
+                >Testimonials</RouterLink
               >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/events">Events</RouterLink>
+              <RouterLink class="nav-link" to="prayers">Prayers</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/activities"
-                >Activities</RouterLink
+              <RouterLink class="nav-link" to="bePartOfUs"
+                >Be part of us</RouterLink
               >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/aboutUs">About Us</RouterLink>
+              <RouterLink class="nav-link" to="materials">Materials</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/materials"
-                >Materials</RouterLink
-              >
+              <RouterLink class="nav-link" to="aboutUs">About Us</RouterLink>
             </li>
-            <li class="nav-item">
-              <RouterLink class="nav-link" to="/sponsorships"
-                >Sponsorships</RouterLink
-              >
-            </li>
-            <li class="nav-item">
-              <RouterLink class="nav-link" to="/messages">Messages</RouterLink>
-            </li>
-            <li class="nav-item">
-              <RouterLink class="nav-link" to="/">Log-out</RouterLink>
-            </li>
+            <!-- <li class="nav-item">
+              <RouterLink class="nav-link" to="/">Log-in</RouterLink>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -55,7 +47,7 @@
   </nav>
 </template>
 <script setup>
-import BannerComponent from '../BannerComponent.vue'
+// import BannerComponent from '../BannerComponent.vue'
 </script>
 <style scoped>
 nav li.a.router-link-active,

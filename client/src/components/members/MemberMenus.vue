@@ -17,35 +17,39 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/admin">Dashboard</RouterLink>
+              <RouterLink class="nav-link" to="/member"
+                >Member's Profile</RouterLink
+              >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/admin/events"
+              <RouterLink class="nav-link" to="/member/events"
                 >Events</RouterLink
               >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/activities"
+              <RouterLink class="nav-link" to="/member/activities"
                 >Activities</RouterLink
               >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/fndsInfo"
-                >Foundations Info</RouterLink
+              <RouterLink class="nav-link" to="/member/aboutUs"
+                >About Us</RouterLink
               >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/materials"
+              <RouterLink class="nav-link" to="/member/materials"
                 >Materials</RouterLink
               >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/sponsorships"
+              <RouterLink class="nav-link" to="/member/sponsorships"
                 >Sponsorships</RouterLink
               >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/members">Members</RouterLink>
+              <RouterLink class="nav-link" to="/member/messages"
+                >Messages</RouterLink
+              >
             </li>
             <li class="nav-item">
               <RouterLink class="nav-link" to="/">Log-out</RouterLink>
@@ -57,7 +61,7 @@
   </nav>
 </template>
 <script setup>
-// import BannerComponent from '../BannerComponent.vue'
+// import BannerComponent from '../general/BannerComponent.vue'
 </script>
 <style scoped>
 nav li.a.router-link-active,
